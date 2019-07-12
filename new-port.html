@@ -12,19 +12,102 @@
 <body>
   <!-- header part -->
 
-  <header id = 'head'>
-    <nav class='nav-class'>
-        <a class='home-nav' href="">Home</a>
-        <a class='about-nav' href="">About</a>
-        <a class='projects-nav' href="">Projects</a>
-        <a class='contact-nav' href="">Contact</a>
-    </nav>
-  </header> 
+    <header id = 'head'>
+        <nav class='nav-class'>
+            <a  class='home-part' onclick="class_find(this)">Home</a>
+            <a class='about-part' onclick="class_find(this)" >About</a>
+            <a class='project-part' onclick="class_find(this)" >Projects</a>
+            <a  class='con' onclick="class_find(this)">Contact</a>
+        </nav>
+    </header> 
+
 
     <!-- home-part -->
-    <div id='home-part' class="container">
-        <h1>VIGNESH SELVARAJ</h1>
+
+        <div id='home-part' class='home-whole-wrap ' style="display: block;">
+            <div id='contain-home' class="container ">
+                    <h1>VIGNESH SELVARAJ</h1>
+                    <span class='web-dev'>(Web Developer)</span>
+                </div>  
+        </div>
+
+    <!-- intro scence -->
+
+    <div class='blank-wrap' style="position: absolute">
+        <div class='blank-div-one'></div>
+        <div class='blank-div-two'></div>
     </div> 
+
+    <!-- about part -->
+
+    <div id='about-part' class='about-me'>
+        <h1>About</h1>
+        <div class='first-half'>
+            <div class='img_wrap'>
+                <img src='images/profile.jpg' class='prof'>
+            </div>
+            <div class='career-sum'>
+                <p>I'm the <strong>WEB DEVELOPER</strong> working for Accenture, focusing on build and test web- based
+                    application for various site components. Create and manage web using semantic mark-up language
+                    i.e.HTML/CSS/JS, to turn static Photoshop designs into Functional Web pages and also migrated
+                    various content to particular components.</p>
+            </div>
+        </div>
+        <div class='sec-half'>
+            <div class='resp-one'>
+                <img src='images/responsive.jpg'>
+                <h3>Responsive</h3>
+                <p>My layouts will work on any device, big or small.</p>
+            </div>
+            <div class='resp-two'>
+                    <img src='images/fast.jpg'>
+                    <h3>Fast</h3>
+                    <p>Fast load times and lag free interaction, my highest priority.</p>
+                </div>
+        </div>
+    </div>
+
+    <!-- project part -->
+
+    <div id='project-part' class='pro_wrap'>
+        <h1 class="h1_in_pro">Projects</h1>
+        <p class='p_in_pro'> <strong>Objective</strong> : Developed Master Unit for reusable code with given clients 
+            input by following client standards and developed prototype designs 
+            into fully functional web pages</p>
+        <div class='project-wrap'>
+                <div class='project-one pro-ani'>
+                    <img src='images/homepage-socialshare.png'>
+                    <div class='on_img'>
+                        <a href='https://www.thenextbreath.com' target="_blank">Visit the Website</a>
+                    </div>
+                    
+                </div>
+                <div class='project-two pro-ani'>
+                        <img src='images/committedtomm.PNG'>
+                        <div class='on_img1'>
+                                <a href='https://www.committedtomm.com/' target="_blank">Visit the Website</a>
+                        </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- contact part -->
+
+    <div id='con' class='contact-part'>
+        <div class='contact-one'>
+            <h1>Let’s talk </h1>
+            <p class='after_talk'> If you are interested in my work,<br> please feel free to contact me at </p>
+            <a class='mail-id' data-hover='vignesh.yes97@gmail.com'>vignesh.yes97@gmail.com</a>
+            <h2>Follow me @</h2>
+            <ul class='follow-part'>
+                <li><img src='images/linkdn.png'>Vignesh Selvaraj</li>
+                <li><img src='images/tweet.png'>vignesh55</li>
+            </ul>
+            <h3>Contact Me @</h3>
+            <span class='phone'>(+91) 77080-21641</span>
+        </div>
+    </div>
 
 
     <script src='new-port.js'></script>

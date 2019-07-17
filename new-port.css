@@ -2,8 +2,16 @@ body{
     background: #000;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    
+    overflow: hidden; 
+}
+
+@media screen and (max-width: 767px){
+    body{
+        background: #000;
+        width: 100%;
+        height: auto;
+        overflow: auto; 
+    }
 }
 
 a:not([href]):not([tabindex]) {
@@ -58,6 +66,47 @@ nav.nav-class a:hover {
     border-right: 1px solid #007bff !important;
 }
 
+@media screen and (max-width: 767px){
+    header#head {
+        width: 100%;
+        min-height: 65px;
+        position: absolute;
+        transform: translate(0%, 0%);
+        left: 0;
+        top: 0;
+        z-index: 1;
+        animation: opa_0_1 1s 2.75s ease both;
+    }
+    nav {
+        display: block;
+        width: 98%;
+        text-align: center;
+        height: 65px;
+        margin: 0 auto;
+    }
+    nav.nav-class a {
+        display: block;
+        padding: 20px;
+        color: #fff !important;
+        float: left;
+        border-right: 0px solid #fff;
+    }
+    nav.nav-class a:hover {
+        color: #007bff !important;
+        text-decoration: none;
+        transform: translateX(0px);
+        transition: transform 0.3s;
+        border-right: 0px solid #007bff;
+    }
+    .active{
+        color: #007bff !important;
+        text-decoration: none;
+        transform: translateX(0px);
+        transition: transform 0.3s;
+        border-right: 0px solid #007bff !important;
+    }
+}
+
 /* home-part */
 
 .home-whole-wrap {
@@ -92,6 +141,16 @@ div#contain-home h1{
     100%{
         transform: translate(-50%, -50%);
         opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    div#contain-home h1{
+        font-size:36px ;
+    }
+    span.web-dev {
+        font-size: 20px !important;
     }
 }
 
@@ -232,6 +291,27 @@ span.phone {
     color: #000;
 }
 
+@media screen and (max-width: 767px){
+    .contact-part {
+        width: 100%;
+        min-height: 667px;
+        padding: 30px;
+        top: 70px;
+        left: 0;
+        display: none;
+    }
+    a.mail-id {
+        font-size: 25px;
+    }
+    .contact-one h2 {
+        margin-top: 40px;
+    }
+    ul.follow-part li img {
+        width: 10%;
+    }
+}
+
+
 /* project part */
 
 .project-wrap {
@@ -346,6 +426,56 @@ span.phone {
     animation: opa_0_1 1s 1s ease both;
 }
 
+
+@media screen and (max-width: 767px){
+    .pro_wrap {
+        width: 100%;
+        min-height: 650px;
+        padding: 30px 15px;
+        float: right;
+        top: 40px;
+        left: 0;
+        display: none;
+    }
+    .pro_wrap p {
+        text-align: center;
+        width: 100%;
+    }
+    .project-wrap {
+        width: 100%;
+        min-height: 400px;
+        padding: 30px 0px 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-one, .project-two {
+        width: 100%;
+        min-height: 136px;
+        display: block;
+        padding: 20px;
+    }
+    .project-two {
+        width: 100%;
+    }
+    .on_img {
+        width: 88.75%;
+        min-height: 154px;
+    }
+    .on_img1 {
+        width: 88.75%;
+        min-height: 156px;
+    }
+    .on_img a, .on_img1 a {
+        width: 150px;
+        padding: 15px 0;
+        position: absolute;
+        top: 33%;
+        left: 25%;
+    }
+}
+
+
+
 /* about part */
 
 .first-half {
@@ -447,4 +577,63 @@ img.prof {
     width: 50%;
     margin: 0 auto;
     color: #fff;
+}
+
+@media screen and (max-width: 767px){
+    .about-me {
+        width: 100%;
+        padding: 30px 15px;
+        height: 750px;
+        float: right;
+        top: 40px;
+        left: 0;
+        display: none;
+    }
+    .first-half {
+        display: flex;
+        padding: 15px 0 0;
+        flex-direction: column;
+    }
+    .img_wrap {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 0 0;
+    }
+    .career-sum {
+        width: 100%;
+        text-align: center;
+    }
+    .career-sum p {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0 0;
+        text-align: center;
+    }
+    .sec-half {
+        width: 100%;
+        height: 275px;
+        text-align: center;
+        padding: 30px 0px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .resp-one, .resp-two {
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 20px 15px;
+    }
+    .resp-one img, .resp-two img {
+        width: 38%;
+        border-radius: 9%;
+    }
+    .resp-one h3, .resp-two h3 {
+        color: #fff;
+        margin: 10px 0 0 0;
+    }
+    .resp-one p, .resp-two p {
+        width: 100%;
+        margin: 0 0px 0 0;
+        color: #fff;
+    }
 }

@@ -12,9 +12,9 @@ navclass.addEventListener('click', class_find(name_class));
 
 function class_find(name_class){
     var blankwrap = document.querySelector('.blank-wrap');
-    var aa = setInterval(function(){
-        blankwrap.removeAttribute('style');
-    },2000);
+    // var aa = setInterval(function(){
+    //     blankwrap.removeAttribute('style');
+    // },2000);
     var found_class = name_class.className;    
     var search_str = found_class.toString().search('active');
     if( search_str == -1 ){

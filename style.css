@@ -48,6 +48,7 @@ nav.nav-class a {
     padding: 20px;
     color: #fff !important;
     border-right: 1px solid #fff;
+    cursor: pointer;
 }
 
 nav.nav-class a:hover {
